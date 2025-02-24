@@ -63,8 +63,8 @@ JavaScript – Interactive elements and dynamic features
 If you want to modify or contribute to the project:
 
 1. Clone the repository:
+https://github.com/mannypalasol/manny-great-site.git
 
-git clone https://github.com/mannypalasol/manny-great-site.git
 
 
 2. Open the folder and start editing the files (index.html, style.css, script.js).
@@ -80,7 +80,7 @@ For any inquiries or suggestions, feel free to reach out:
 
 Email: kokoypalasol0@gmail.com
 
-GitHub: https://github.com/mannypalasol/manny-great-site.git
+GitHub: [https://github.com/mannypalasol/manny-great-site.git](https://github.com/mannypalasol/manny-great-site.git)
 
 
 
