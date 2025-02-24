@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="fMstHQS5_94Glpkw-Nu-61qV9V9mXTCm8E8e5UfZ8-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-button active" onclick="showForm('signup')">Sign Up</button>
+            <button class="tab-button" onclick="showForm('login')">Login</button>
+        </div>
+ <header>
+      <h1 id="myh1">hello users</h1>
+      
+ </header>
+        <!-- SIGN UP FORM -->
+        <div id="signupForm" class="form-container">
+            <h2>Sign Up</h2>
+            <input type="email" id="signUpEmail" placeholder="Enter Email">
+            <input type="password" id="signUpPassword" placeholder="Enter Password">
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <div id="loginForm" class="form-container hidden">
+            <h2>Login</h2>
+            <input type="email" id="loginEmail" required 
+            placeholder="Enter Email">
+            <input type="password" id="loginPassword" required
+            placeholder="Enter Password">
+            <button onclick="login()">Login</button><br>
+
+        </div>
+    </div>
+        <!-- Load External JavaScript -->
+    <script type="module" src="script.js"></script>
+       <script src="logs.js"></script>
+       <script src="google.js"></script>
+       
+</body>
+</html>

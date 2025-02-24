@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android App Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        #searchBar {
+            width: 80%;
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+        .app-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .app {
+            background: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+        .app a {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Android App Store</h1>
+    <input type="text" id="searchBar" placeholder="Search for an app..." onkeyup="searchApps()">
+
+    <div class="app-container" id="appList">
+        <div class="app" data-name="MORTAL COMBAT">
+            <h3>MORTAL COMBAT</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.wb.goog.mkx" target="_blank">Download</a>
+        </div>
+        <div class="app" data-name="Sky children">
+            <h3>Sky Children: Rematered</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.tgc.sky.android" target="_blank">Download</a>
+        </div>
+        <div class="app" data-name="FACEBOOK">
+            <h3>FACEBOOK</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.facebook.katana" target="_auto">Download</a>
+        </div>
+        <div class="app" data-name="CALL OF DUTY">
+            <h3>CALL OF DUTY</h3>
+            <a href="https://play.google.com/store/apps/details?id=com.garena.game.codm" target=_blank>codm</a>
+        </div>
+    </div>
+ <h1> IM MAKING NEW UPDATES!</h1>
+ <p>Soon....5days</p>
+ <p id="back" <a href="index.html">back</p>
+    <script>
+        function searchApps() {
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            let apps = document.getElementsByClassName('app');
+
+            for (let i = 0; i < apps.length; i++) {
+                let appName = apps[i].getAttribute('data-name').toLowerCase();
+                if (appName.includes(input)) {
+                    apps[i].style.display = 'block';
+                } else {
+                    apps[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

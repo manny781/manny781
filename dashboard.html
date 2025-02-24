@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_circle_right" />
+    <title>Game Download Hub</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .search-bar {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .game-list {
+            list-style: none;
+            padding: 0;
+        }
+        .game-list li {
+            background: #1e1e1e;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .game-list a {
+            color: #4caf50;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .game-list a:hover {
+            text-decoration: underline;
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>Game hub </h1>
+    <input type="text" class="search-bar" placeholder="Search for games..." onkeyup="searchGames()"><ul class="game-list" id="gameList">
+    <li><a href="https://www.gametop.com/download-free-games/shtriga-summer-camp/" target="_blank">Shtriga: Summer Camp</a></li>
+    <li><a href="https://gog-games.to/game/cabernet" target="_self">Cabernet</a></li>
+    <li><a href="https://gog-games.to/game/neverwinter_nights_enhanced_edition" target="_self">Neverwinter Nights Enhanced Edition</a></li>
+    <li><a href="https://gog-games.to/game/seed_of_the_dead" target="_self">Seed of the Dead</a></li>
+    <li><a href="https://gog-games.to/game/red_faction_guerrilla_remarstered" target="_self">Red Faction Guerrilla Remarstered</a></li>
+    <li><a href="https://gog-games.to/game/slender_threads" target="_self">Slender Threads</a></li>
+    <li><a href="https://gog-games.to/game/rustler_grand_theft_horse" target="_self">Rustler: Grand Theft Horse</a></li>
+    <li><a href="https://gog-games.to/game/combat_mission_red_thunder" target="_self">Combat Mission Red Thunder</a></li>
+    <li><a href="https://gog-games.to/game/combat_mission_final_blitzkrieg" target="_self">Combat Mission Final Blitzkrieg</a></li>
+    <li><a href="https://gog-games.to/game/the_smurfs_dreams" target="_self">The Smurfs Dreams</a></li>
+    <li><a href="https://gog-games.to/game/reality_self" target="_blank">Reality Break</a></li>
+    <li><a href="https://doovu.com/0738-2/" target="_self">Game Download Link</a></li>
+    <li><a href="https://gamingbeasts.com/grand-theft-auto-v-download/" target="_self">Grand Theft Auto V</a></li>
+    <li><a href="https://gta-iv-san-andreas.en.uptodown.com/windows/download" target="_self">GTA IV: San Andreas</a></li>
+       <li><a href="https://www.gametop.com/download-free-games/world-of-tanks/" target="_self">world of tanks</li>
+</ul>
+
+<a href="shop.html" class="material-symbols-outlined icon-link">GO</a>
+<script>
+    function searchGames() {
+        let input = document.querySelector('.search-bar').value.toLowerCase();
+        let items = document.querySelectorAll('.game-list li');
+        
+        items.forEach(item => {
+            let text = item.textContent.toLowerCase();
+            item.style.display = text.includes(input) ? '' : 'none';
+        });
+    }
+</script>
+
+</body>
+</html>
+
