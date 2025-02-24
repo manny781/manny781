@@ -80,8 +80,7 @@ For any inquiries or suggestions, feel free to reach out:
 
 Email: kokoypalasol0@gmail.com
 
-GitHub: [https://github.com/mannypalasol/manny-great-site.git](https://github.com/mannypalasol/manny-great-site.git)
-
+GitHub: https://github.com/manny781
 
 
 ---
